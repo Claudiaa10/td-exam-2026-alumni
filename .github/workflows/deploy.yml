@@ -9,9 +9,9 @@ env:
   PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
   GKE_CLUSTER: ${{ secrets.GKE_CLUSTER }}
   GKE_ZONE: ${{ secrets.GKE_ZONE }}
-  IMAGE_NAME_ROUTER: gcr.io/${{ secrets.GKE_CLUSTER }}/router
-  IMAGE_NAME_API: gcr.io/${{ secrets.GKE_CLUSTER }}/api-gw
-  IMAGE_NAME_STORE: gcr.io/${{ secrets.GKE_CLUSTER }}/backend-storage
+  IMAGE_NAME_ROUTER: gcr.io//${{ secrets.GKE_CLUSTER }}/router
+  IMAGE_NAME_API: gcr.io//${{ secrets.GKE_CLUSTER }}/api-gw
+  IMAGE_NAME_STORE: gcr.io//${{ secrets.GKE_CLUSTER }}/backend-storage
 jobs:
   deploy:
     runs-on: ubuntu-latest
