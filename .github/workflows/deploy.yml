@@ -36,6 +36,8 @@ jobs:
         docker push $IMAGE_NAME_ROUTER:$GITHUB_SHA
         docker push $IMAGE_NAME_ROUTER:latest
 
+
+
     - name: Build and push Docker image api
       run: |
         docker build -t $IMAGE_NAME_API:$GITHUB_SHA -f source/api-gw/Dockerfile .
