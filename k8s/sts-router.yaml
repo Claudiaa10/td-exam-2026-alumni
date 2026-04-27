@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: router
-          image: IMAGE_NAME_ROUTER
+          image: ghcr.io/tuusuario/api-gw:latest
           ports:
             - containerPort: 3000
           volumeMounts:

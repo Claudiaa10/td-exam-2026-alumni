@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: svc-storage
 spec:
-  clusterIP: <placeholder>
+  clusterIP: 34.118.224.1
   selector:
     app: api-gw
   ports:
