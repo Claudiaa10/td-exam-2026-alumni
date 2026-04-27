@@ -3,29 +3,29 @@ kind: StatefulSet
 metadata:
   name: sts-storage
 spec:
-  serviceName: <placeholder>
+  serviceName: svc-store
   replicas: 1
   selector:
     matchLabels:
-      app: <placeholder>
+      app: store
   template:
     metadata:
       labels:
-        app: <placeholder>
+        app: store
     spec:
       containers:
         - name: storage
-          image: <placeholder>
+          image: IMAGE_NAME_STORE
           ports:
             - containerPort: 3000
           volumeMounts:
-            - name: <placeholder>
+            - name: svc-storage
               mountPath: /data
   volumeClaimTemplates:
     - metadata:
-        name: <placeholder>
+        name: svc-storage
       spec:
-        accessModes: <placeholder>
+        accessModes: "ReadWriteOnce"
         storageClassName: standard
         resources:
           requests:
