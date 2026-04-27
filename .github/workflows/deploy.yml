@@ -6,6 +6,7 @@ on:
       - main
 
 env:
+
   PROJECT_ID: ${{ vars.GCP_PROJECT_ID }}
   GKE_CLUSTER: ${{ vars.GKE_CLUSTER }}
   GKE_ZONE: ${{ vars.GKE_ZONE }}
