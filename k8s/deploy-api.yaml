@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: api-gw
-          image: placeholder
+          image: hcr.io/td-exam-2026-alumni/api-gw:latest
           ports:
             - containerPort: 3000

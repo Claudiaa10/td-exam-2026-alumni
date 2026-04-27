@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: router
-          image: ghcr.io/tuusuario/api-gw:latest
+          image: hcr.io/td-exam-2026-alumni/api-gw:latest
           ports:
             - containerPort: 3000
           volumeMounts:
