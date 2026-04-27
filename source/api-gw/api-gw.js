@@ -6,7 +6,7 @@ app.use(express.json());
 
 const ROUTER_URL = "http://svc-router:3000";
 
-// ---------------------
+// --------------------
 // GET user
 // ---------------------
 app.get("/user/:id", async (req, res) => {
