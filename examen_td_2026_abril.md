@@ -177,4 +177,4 @@
 - C) `terraform refresh` actualiza el estado local con los cambios hechos manualmente en la nube
 - D) El estado solo puede guardarse de forma local en el disco del desarrollador
 
-**Solución:** a,
+**Solución:** a,b
